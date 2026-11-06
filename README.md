@@ -2,6 +2,14 @@
 
 ### A MobileNetV2-Based Deep Learning Prototype for Classifying Learning-Scene Images
 
+### Live Demo
+
+[Launch the AI Learning Engagement Classifier](https://ai-learning-engagement-classifier-2ednmkmvfk972jz2qq22fr.streamlit.app)
+
+Upload a learning-scene image to explore the model's Engagement / Disengagement predictions.
+
+**Note:** This is an educational prototype, not a validated tool for measuring students' actual engagement.
+
 **Project Type:** Deep Learning · Computer Vision · Educational AI  
 **Developer:** Heejin Park, Ph.D.  
 **Date:** November 2026  
