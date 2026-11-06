@@ -1,0 +1,2 @@
+﻿id,split,image,object_index,original_label,final_label,notes
+train/09fcf12430751dc237d79f342f8b5dd7_jpg.rf.40bdd546c13121b1d67ecc7243c3fae3.jpg#0,train,09fcf12430751dc237d79f342f8b5dd7_jpg.rf.40bdd546c13121b1d67ecc7243c3fae3.jpg,0,Looking away,excluded_ambiguous,
