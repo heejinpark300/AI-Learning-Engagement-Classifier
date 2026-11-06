@@ -26,33 +26,22 @@ st.set_page_config(
 
 st.title("AI Learning Engagement Classifier")
 
-st.write(
-    "MobileNetV2 기반 학습 장면 이미지 분류 시스템"
+st.caption(
+    "MobileNetV2-Based Learning-Scene Image Classification"
 )
 
 st.info(
-    "이 프로그램은 학습 이미지에 부여된 "
-    "Engagement / Disengagement 라벨을 예측합니다. "
-    "학생의 실제 학습 몰입도를 확정적으로 평가하지 않습니다."
+    "This application predicts Engagement and Disengagement "
+    "labels assigned to learning-scene images. "
+    "It does not provide a validated assessment of "
+    "students' actual learning engagement."
 )
 
-# 모델 불러오기
-@st.cache_resource
-def load_model():
-    return tf.keras.models.load_model(MODEL_PATH)
-
-
-if not MODEL_PATH.exists():
-    st.error("학습된 모델 파일을 찾을 수 없습니다.")
-    st.stop()
-
-model = load_model()
-
-# 이미지 업로드
 uploaded_file = st.file_uploader(
-    "학습자 이미지를 업로드하세요.",
+    "Upload a learning-scene image.",
     type=["jpg", "jpeg", "png"]
 )
+
 
 if uploaded_file is not None:
 
